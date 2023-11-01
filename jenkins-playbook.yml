@@ -3,6 +3,9 @@
   vars: 
     docker_users:
     - jenkins
+    java_packages:
+      - openjdk-17-jdk
   roles:
+    - role: geerlingguy.java
     - role: geerlingguy.jenkins
     - role: geerlingguy.docker
